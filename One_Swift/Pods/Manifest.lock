@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.6.0)
+  - CryptoSwift (0.7.2)
+  - SnapKit (4.0.0)
+  - SQLite.swift (0.11.4):
+    - SQLite.swift/standard (= 0.11.4)
+  - SQLite.swift/standard (0.11.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6)
+  - CryptoSwift (~> 0.7.2)
+  - SnapKit (~> 4.0.0)
+  - SQLite.swift (~> 0.11.4)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  CryptoSwift: cd2158be2bf639aabc63ec804707c7137c90157c
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
+
+PODFILE CHECKSUM: 5392bc6067d7c3a47a61e5699b613e9488b6f20f
+
+COCOAPODS: 1.4.0
