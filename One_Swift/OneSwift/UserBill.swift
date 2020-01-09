@@ -36,7 +36,8 @@ class UserBill: NSObject {
                 
                 person["id"] = String.init(cString: id!)
                 person["name"] = String.init(cString: name!)
-                person["age"] = String(stringInterpolationSegment: age)
+//                person["age"] = String(stringInterpolationSegment: age)
+                person["age"] = String(age)
                 person["image"] = Data(bytes:image, count: Int(length))
                 
                 allArr?.append(person)

@@ -30,7 +30,7 @@ class WeakTimerObject: NSObject {
         return weakObject.timer!
     }
     
-    func fire(_ ti: Timer) {
+    @objc func fire(_ ti: Timer) {
         if let _ = targat {
             _ = targat?.perform(selector!, with: ti.userInfo)
         }

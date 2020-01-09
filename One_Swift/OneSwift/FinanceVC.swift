@@ -33,7 +33,7 @@ class FinanceVC: BaseVC ,UITableViewDelegate,UITableViewDataSource{
     }
     
     // MARK: - 自定义方法
-    func goFriendCircleVC() -> () {
+    @objc func goFriendCircleVC() -> () {
         let friendCircleVC = FriendCircleVC.init()
         friendCircleVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(friendCircleVC, animated: true)

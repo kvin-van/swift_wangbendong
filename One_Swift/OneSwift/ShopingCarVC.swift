@@ -39,7 +39,7 @@ class ShopingCarVC: BaseVC,UITableViewDataSource,UITableViewDelegate {
     // MARK: - 数据库
     //手写存储
     //添加
-    func hand_Action_Add() {
+    @objc func hand_Action_Add() {
         let user : UserBill = UserBill()
         var tempDictionary : Dictionary<String,Any> = ["id":"1009","name":"名字9","age":5]
         tempDictionary["image"] = UIImageJPEGRepresentation(UIImage.init(named: "mine_broker")!, 1)

@@ -41,25 +41,29 @@ class BaseVC: UIViewController {
         navitype = .redType
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        print("内存泄漏！！！=%@",self);
-    }
-    
     // MARK: - 自定义方法
     
     func setNaviAction(type:NaviType) -> () {
 
-        var navTextColorDic :[String : Any] = [:]
+        var navTextColorDic :[NSAttributedStringKey : Any] = [:]
         if type == .redType {
             UIApplication.shared.statusBarStyle = .lightContent
+            
             self.navigationController?.navigationBar.isTranslucent = false
-            navTextColorDic = [NSForegroundColorAttributeName : UIColor.white, NSFontAttributeName : UIFont.systemFont(ofSize: 18.0)]
+           navTextColorDic =
+            [NSAttributedStringKey.foregroundColor:UIColor.white//设置颜色
+            ,NSAttributedStringKey.font:UIFont.systemFont(ofSize: 18)//设置字体
+//            ,NSAttributedStringKey.backgroundColor:UIColor.red//背景色
+            ]
             self.navigationController?.navigationBar.barTintColor = UIColor.ColorHex(hex : "0xFF625B")
         }
         else if (type == .whiteType){
             UIApplication.shared.statusBarStyle = .default
-            navTextColorDic = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 18.0)]
+            navTextColorDic =
+                        [NSAttributedStringKey.foregroundColor:UIColor.black//设置颜色
+                        ,NSAttributedStringKey.font:UIFont.systemFont(ofSize: 18)//设置字体
+                        ]
+//            navTextColorDic = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 18.0)]
             self.navigationController?.navigationBar.barTintColor = UIColor.white
             self.navigationController?.navigationBar.isTranslucent = false
         }
@@ -70,7 +74,7 @@ class BaseVC: UIViewController {
         navigationBar?.titleTextAttributes = navTextColorDic
     }
     
-    func baseBack() -> () {
+    @objc func baseBack() -> () {
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -93,16 +97,9 @@ class BaseVC: UIViewController {
         }
     }
     
+    override func didReceiveMemoryWarning() {
+           super.didReceiveMemoryWarning()
+           print("内存泄漏！！！=%@",self);
+       }
     
-    
-
-    /*
-    // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

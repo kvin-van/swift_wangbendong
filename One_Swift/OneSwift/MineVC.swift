@@ -57,7 +57,7 @@ let native : NativeRequest = NativeRequest()
     }
     
     // MARK: - 自定义方法
-    func goShopingCarVC() -> () {
+    @objc func goShopingCarVC() -> () {
         let shopingCarVC = ShopingCarVC.init(nibName: "ShopingCarVC", bundle: Bundle.main)
         shopingCarVC.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(shopingCarVC, animated: true)
