@@ -42,7 +42,8 @@ class ShopingCarVC: BaseVC,UITableViewDataSource,UITableViewDelegate {
     @objc func hand_Action_Add() {
         let user : UserBill = UserBill()
         var tempDictionary : Dictionary<String,Any> = ["id":"1009","name":"名字9","age":5]
-        tempDictionary["image"] = UIImageJPEGRepresentation(UIImage.init(named: "mine_broker")!, 1)
+//        tempDictionary["image"] = UIImageJPEGRepresentation(UIImage.init(named: "mine_broker")!, 1)旧
+        tempDictionary["image"] = UIImage.init(named: "mine_broker")!.jpegData(compressionQuality: 1)
         DispatchQueue.global().async {
             let zhen :Bool = user.dbAdd(dictionary: tempDictionary)
             print(zhen)
@@ -80,12 +81,13 @@ class ShopingCarVC: BaseVC,UITableViewDataSource,UITableViewDelegate {
         let bol : Bool = db.openDB()
         print(bol)
         //方式1 不能存储图片
-        //        var tempDic : Dictionary<String,Any> = ["id":"1002","name":"名字2","age":32]
-        //        let sql = "insert into Person(id,name,age) values('\(tempDic["id"]!)','\(tempDic["name"]!)',\(tempDic["age"]!))"
-        //        print("sql: \(sql)")
-        //         let result = db.execute(sql: sql)
+//                var tempDic : Dictionary<String,Any> = ["id":"1002","name":"名字2","age":32]
+//                let sql = "insert into Person(id,name,age) values('\(tempDic["id"]!)','\(tempDic["name"]!)',\(tempDic["age"]!))"
+//                print("sql: \(sql)")
+//                 let result = db.execute(sql: sql)
         //方式2
-        let data = UIImageJPEGRepresentation(UIImage.init(named: "mine_broker")!, 1)!
+//        let data = UIImageJPEGRepresentation(UIImage.init(named: "mine_broker")!, 1)!  旧
+        let data = UIImage.init(named: "mine_broker")!.jpegData(compressionQuality: 1)!
         let tempArr :Array<Any> = ["1009","名字9",5,data]
         let sql = "insert into Person(id,name,age,image) values(?,?,?,?)"
         print("sql: \(sql)")
@@ -137,7 +139,7 @@ class ShopingCarVC: BaseVC,UITableViewDataSource,UITableViewDelegate {
         return "删除它"
     }
     
-    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    internal func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
     {
         if editingStyle == .delete {
         hand_Action_Delete(dictionary: carArr[indexPath.row], index: indexPath)

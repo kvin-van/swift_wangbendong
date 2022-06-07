@@ -23,8 +23,8 @@ let  Http_QueryMyWealth = "http://172.18.100.42:8080/xqAppServer/api/APPBizRest/
 
 let Define_dbName : String = "PersonDB.sqlite"
 
-func getDeviceUUID() -> (String) {
-    let uuid : String! = (UIDevice.current.identifierForVendor?.uuidString) as String!
-    
-    return uuid;
-}
+//func getDeviceUUID() -> (String) {
+//    let uuid : String! = (UIDevice.current.identifierForVendor?.uuidString) as String!
+//    return uuid;
+//}
+

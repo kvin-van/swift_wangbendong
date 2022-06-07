@@ -23,7 +23,7 @@ class BaseVC: UIViewController {
         }
     }
     //返回键
-    var backButton :UIButton = UIButton.init(type: UIButtonType.custom)
+    var backButton :UIButton = UIButton.init(type: UIButton.ButtonType.custom)
     
     // MARK: - 系统
     override func viewDidLoad() {
@@ -45,14 +45,14 @@ class BaseVC: UIViewController {
     
     func setNaviAction(type:NaviType) -> () {
 
-        var navTextColorDic :[NSAttributedStringKey : Any] = [:]
+        var navTextColorDic :[NSAttributedString.Key : Any] = [:]
         if type == .redType {
             UIApplication.shared.statusBarStyle = .lightContent
             
             self.navigationController?.navigationBar.isTranslucent = false
            navTextColorDic =
-            [NSAttributedStringKey.foregroundColor:UIColor.white//设置颜色
-            ,NSAttributedStringKey.font:UIFont.systemFont(ofSize: 18)//设置字体
+            [NSAttributedString.Key.foregroundColor:UIColor.white//设置颜色
+             ,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18)//设置字体
 //            ,NSAttributedStringKey.backgroundColor:UIColor.red//背景色
             ]
             self.navigationController?.navigationBar.barTintColor = UIColor.ColorHex(hex : "0xFF625B")
@@ -60,8 +60,8 @@ class BaseVC: UIViewController {
         else if (type == .whiteType){
             UIApplication.shared.statusBarStyle = .default
             navTextColorDic =
-                        [NSAttributedStringKey.foregroundColor:UIColor.black//设置颜色
-                        ,NSAttributedStringKey.font:UIFont.systemFont(ofSize: 18)//设置字体
+            [NSAttributedString.Key.foregroundColor:UIColor.black//设置颜色
+             ,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 18)//设置字体
                         ]
 //            navTextColorDic = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 18.0)]
             self.navigationController?.navigationBar.barTintColor = UIColor.white
@@ -82,14 +82,14 @@ class BaseVC: UIViewController {
     func showBack(show : Bool) -> () {
         if(show){
             backButton.frame = CGRect.init(x: 0, y: 0, width: 40, height: 44)
-            backButton.setImage(UIImage(named : "nav_back"), for: UIControlState.normal)
-            backButton.addTarget(self, action : #selector(baseBack), for: UIControlEvents.touchUpInside)
-            backButton.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 10);
+            backButton.setImage(UIImage(named : "nav_back"), for: UIControl.State.normal)
+            backButton.addTarget(self, action : #selector(baseBack), for: UIControl.Event.touchUpInside)
+            backButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 10);
             
             let backButtonView : UIView! = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 40, height: 44))
             backButtonView.addSubview(backButton);
             let backItem : UIBarButtonItem = UIBarButtonItem.init(customView: backButtonView)
-            backItem.style = UIBarButtonItemStyle.plain
+            backItem.style = UIBarButtonItem.Style.plain
             self.navigationItem.leftBarButtonItem = backItem;
         }
         else{

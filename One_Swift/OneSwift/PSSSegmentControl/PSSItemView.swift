@@ -29,7 +29,7 @@ class PSSItemView: UIButton {
                 anima.fromValue = 1.0
                 anima.toValue = self.pss_scale
                 anima.isRemovedOnCompletion = false
-                anima.fillMode = kCAFillModeForwards
+                anima.fillMode = CAMediaTimingFillMode.forwards
                 anima.duration = CFTimeInterval(self.pss_duration)
                 self.layer.add(anima, forKey: nil)
             } else {
@@ -37,7 +37,7 @@ class PSSItemView: UIButton {
                 anima.fromValue = self.pss_scale
                 anima.toValue = 1
                 anima.isRemovedOnCompletion = false
-                anima.fillMode = kCAFillModeForwards
+                anima.fillMode = CAMediaTimingFillMode.forwards
                 anima.duration = CFTimeInterval(self.pss_duration)
                 self.layer.add(anima, forKey: nil)
             }
@@ -74,7 +74,7 @@ class PSSItemView: UIButton {
     private var pss_title: NSString!
     
     var itemWidth: CGFloat {
-        let attr = [NSAttributedStringKey.font:self.pss_font]
+        let attr = [NSAttributedString.Key.font:self.pss_font]
         let titleSize = self.pss_title.boundingRect(with: CGSize.init(width: CGFloat(MAXFLOAT), height: self.pss_height), options: .usesFontLeading, attributes: attr, context: nil)
         return titleSize.width + 2 * pss_inset
     }
