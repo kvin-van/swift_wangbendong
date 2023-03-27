@@ -326,7 +326,7 @@
 				TargetAttributes = {
 					214E2ED71F4FF67100735E81 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6B3ZC93AA8;
+						DevelopmentTeam = VXR43ZV554;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -580,10 +580,10 @@
 			baseConfigurationReference = F30BBE50E6EBCA79AA208E84 /* Pods-OneSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6B3ZC93AA8;
+				DEVELOPMENT_TEAM = VXR43ZV554;
 				INFOPLIST_FILE = OneSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.text.swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbendong.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -597,10 +597,10 @@
 			baseConfigurationReference = 866AAC2BC88CC4F2E8CF9E83 /* Pods-OneSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6B3ZC93AA8;
+				DEVELOPMENT_TEAM = VXR43ZV554;
 				INFOPLIST_FILE = OneSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.text.swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbendong.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

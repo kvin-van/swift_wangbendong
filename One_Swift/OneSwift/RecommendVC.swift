@@ -22,6 +22,7 @@ class RecommendVC: BaseVC,UIScrollViewDelegate {
         self.navigationController?.isNavigationBarHidden = true
         
         self.addSegmentC()
+        
     }
 
     // MARK: - 多控件浏览
