@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5B1A80D29D1699D007F8A03 /* FoodPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A80C29D1699D007F8A03 /* FoodPickerApp.swift */; };
+		D5B1A80F29D1699D007F8A03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A80E29D1699D007F8A03 /* ContentView.swift */; };
+		D5B1A81129D1699F007F8A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B1A81029D1699F007F8A03 /* Assets.xcassets */; };
+		D5B1A81429D1699F007F8A03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B1A81329D1699F007F8A03 /* Preview Assets.xcassets */; };
+		D5B1A81B29D2B3F1007F8A03 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A81A29D2B3F1007F8A03 /* Food.swift */; };
+		D5B1A81D29D3E624007F8A03 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A81C29D3E624007F8A03 /* Extensions.swift */; };
+		D5B1A81F29D3EB7A007F8A03 /* FoodSubffixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A81E29D3EB7A007F8A03 /* FoodSubffixWrapper.swift */; };
+		D5B1A82129D3F21E007F8A03 /* ShapeStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A82029D3F21E007F8A03 /* ShapeStyleView.swift */; };
+		D5B1A82329D53560007F8A03 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A82229D53560007F8A03 /* FoodListView.swift */; };
+		D5B1A82629D678FD007F8A03 /* FoodForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B1A82529D678FD007F8A03 /* FoodForm.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D5B1A80929D1699D007F8A03 /* FoodPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B1A80C29D1699D007F8A03 /* FoodPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerApp.swift; sourceTree = "<group>"; };
+		D5B1A80E29D1699D007F8A03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D5B1A81029D1699F007F8A03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5B1A81329D1699F007F8A03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D5B1A81A29D2B3F1007F8A03 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		D5B1A81C29D3E624007F8A03 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D5B1A81E29D3EB7A007F8A03 /* FoodSubffixWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSubffixWrapper.swift; sourceTree = "<group>"; };
+		D5B1A82029D3F21E007F8A03 /* ShapeStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeStyleView.swift; sourceTree = "<group>"; };
+		D5B1A82229D53560007F8A03 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		D5B1A82429D56933007F8A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5B1A82529D678FD007F8A03 /* FoodForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForm.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5B1A80629D1699D007F8A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5B1A80029D1699D007F8A03 = {
+			isa = PBXGroup;
+			children = (
+				D5B1A80B29D1699D007F8A03 /* FoodPicker */,
+				D5B1A80A29D1699D007F8A03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5B1A80A29D1699D007F8A03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5B1A80929D1699D007F8A03 /* FoodPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5B1A80B29D1699D007F8A03 /* FoodPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D5B1A82429D56933007F8A03 /* Info.plist */,
+				D5B1A80C29D1699D007F8A03 /* FoodPickerApp.swift */,
+				D5B1A80E29D1699D007F8A03 /* ContentView.swift */,
+				D5B1A81A29D2B3F1007F8A03 /* Food.swift */,
+				D5B1A82229D53560007F8A03 /* FoodListView.swift */,
+				D5B1A82529D678FD007F8A03 /* FoodForm.swift */,
+				D5B1A81E29D3EB7A007F8A03 /* FoodSubffixWrapper.swift */,
+				D5B1A81C29D3E624007F8A03 /* Extensions.swift */,
+				D5B1A82029D3F21E007F8A03 /* ShapeStyleView.swift */,
+				D5B1A81029D1699F007F8A03 /* Assets.xcassets */,
+				D5B1A81229D1699F007F8A03 /* Preview Content */,
+			);
+			path = FoodPicker;
+			sourceTree = "<group>";
+		};
+		D5B1A81229D1699F007F8A03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D5B1A81329D1699F007F8A03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5B1A80829D1699D007F8A03 /* FoodPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B1A81729D1699F007F8A03 /* Build configuration list for PBXNativeTarget "FoodPicker" */;
+			buildPhases = (
+				D5B1A80529D1699D007F8A03 /* Sources */,
+				D5B1A80629D1699D007F8A03 /* Frameworks */,
+				D5B1A80729D1699D007F8A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodPicker;
+			productName = FoodPicker;
+			productReference = D5B1A80929D1699D007F8A03 /* FoodPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5B1A80129D1699D007F8A03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D5B1A80829D1699D007F8A03 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D5B1A80429D1699D007F8A03 /* Build configuration list for PBXProject "FoodPicker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5B1A80029D1699D007F8A03;
+			productRefGroup = D5B1A80A29D1699D007F8A03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5B1A80829D1699D007F8A03 /* FoodPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5B1A80729D1699D007F8A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B1A81429D1699F007F8A03 /* Preview Assets.xcassets in Resources */,
+				D5B1A81129D1699F007F8A03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5B1A80529D1699D007F8A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B1A80F29D1699D007F8A03 /* ContentView.swift in Sources */,
+				D5B1A80D29D1699D007F8A03 /* FoodPickerApp.swift in Sources */,
+				D5B1A82329D53560007F8A03 /* FoodListView.swift in Sources */,
+				D5B1A81B29D2B3F1007F8A03 /* Food.swift in Sources */,
+				D5B1A81D29D3E624007F8A03 /* Extensions.swift in Sources */,
+				D5B1A82629D678FD007F8A03 /* FoodForm.swift in Sources */,
+				D5B1A82129D3F21E007F8A03 /* ShapeStyleView.swift in Sources */,
+				D5B1A81F29D3EB7A007F8A03 /* FoodSubffixWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D5B1A81529D1699F007F8A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5B1A81629D1699F007F8A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5B1A81829D1699F007F8A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodPicker/Preview Content\"";
+				DEVELOPMENT_TEAM = VXR43ZV554;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPicker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbendong.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5B1A81929D1699F007F8A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodPicker/Preview Content\"";
+				DEVELOPMENT_TEAM = VXR43ZV554;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodPicker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangbendong.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5B1A80429D1699D007F8A03 /* Build configuration list for PBXProject "FoodPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B1A81529D1699F007F8A03 /* Debug */,
+				D5B1A81629D1699F007F8A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B1A81729D1699F007F8A03 /* Build configuration list for PBXNativeTarget "FoodPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B1A81829D1699F007F8A03 /* Debug */,
+				D5B1A81929D1699F007F8A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5B1A80129D1699D007F8A03 /* Project object */;
+}
