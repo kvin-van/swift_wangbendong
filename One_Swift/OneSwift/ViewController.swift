@@ -134,6 +134,7 @@ class ViewController:UIViewController {
         switch someCharacter {
         case "a","s":
             print("The first letter of the alphabet")
+            break
         case "g" where someCharacter == "g" :
             print("The last letter of the alphabet")
         default:

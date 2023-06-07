@@ -90,6 +90,8 @@
 		21FF72641F7253BA006ADE22 /* SetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCell.swift; sourceTree = "<group>"; };
 		21FF72661F7253D5006ADE22 /* SetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetCell.xib; sourceTree = "<group>"; };
 		866AAC2BC88CC4F2E8CF9E83 /* Pods-OneSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSwift/Pods-OneSwift.release.xcconfig"; sourceTree = "<group>"; };
+		D58E8A0D2A08D5B800805C56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D58E8A0E2A08D5B900805C56 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F30BBE50E6EBCA79AA208E84 /* Pods-OneSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSwift/Pods-OneSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -339,6 +341,7 @@
 				English,
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 214E2ECF1F4FF67100735E81;
 			productRefGroup = 214E2ED91F4FF67100735E81 /* Products */;
@@ -455,6 +458,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				214E2EE01F4FF67100735E81 /* Base */,
+				D58E8A0D2A08D5B800805C56 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -463,6 +467,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				214E2EE51F4FF67100735E81 /* Base */,
+				D58E8A0E2A08D5B900805C56 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
