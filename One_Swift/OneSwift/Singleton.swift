@@ -14,10 +14,11 @@ class Singleton: NSObject {
     
 //4、定义私有静态变量 通过公有方法访问
     private static let instance = Singleton();
+    
     class func shareInstance() -> Singleton {
         return instance;
     }
-    
+    //把构造器变成私有
     private override init() {
         print("Singleton 初始化了一次")
         mobile = "13010000000"
